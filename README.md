@@ -1,4 +1,4 @@
-# SNACS 2025 Course Project: RAND-ESU Motif Sampling
+# RAND-ESU Motif Sampling Project
 
 This `src/` package provides a modular Python implementation of RAND-ESU for sampling connected induced subgraphs (motifs) on SNAP datasets, plus experiment runners and utilities.
 
