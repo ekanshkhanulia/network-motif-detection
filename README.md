@@ -1,4 +1,4 @@
-![Motif examples](assets/Screenshot_555.png)
+<img src="assets/Screenshot_555.png" alt="Motif examples" width="520">
 
 # RAND-ESU Motif Sampling
 
