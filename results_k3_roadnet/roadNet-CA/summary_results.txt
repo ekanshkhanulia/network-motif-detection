@@ -1,0 +1,28 @@
+Dataset: roadNet-CA
+Directed: False
+k values: [3]
+q values: [0.1]
+Seeds: [1, 2, 3]
+Baseline: esa
+
+ESA baseline results per seed:
+  k=3 q=0.1 seed=1 samples=5000 unique=2 runtime_sec=1281.542
+    csv=roadNet-CA/k3/baseline/esa/esa_q0.1_seed1_samples5000.csv
+    meta=roadNet-CA/k3/baseline/esa/esa_q0.1_seed1_samples5000_meta.json
+    plot=roadNet-CA/k3/baseline/esa/esa_q0.1_seed1_samples5000_motifs.png
+  k=3 q=0.1 seed=2 samples=5000 unique=2 runtime_sec=1280.169
+    csv=roadNet-CA/k3/baseline/esa/esa_q0.1_seed2_samples5000.csv
+    meta=roadNet-CA/k3/baseline/esa/esa_q0.1_seed2_samples5000_meta.json
+    plot=roadNet-CA/k3/baseline/esa/esa_q0.1_seed2_samples5000_motifs.png
+  k=3 q=0.1 seed=3 samples=5000 unique=2 runtime_sec=1283.763
+    csv=roadNet-CA/k3/baseline/esa/esa_q0.1_seed3_samples5000.csv
+    meta=roadNet-CA/k3/baseline/esa/esa_q0.1_seed3_samples5000_meta.json
+    plot=roadNet-CA/k3/baseline/esa/esa_q0.1_seed3_samples5000_motifs.png
+Baseline aggregate: runs=3 total_samples=15000 mean_runtime_sec=1281.825
+
+RAND-ESU results per seed:
+  k=3 q=0.1 seed=1 samples=576703 unique=2 runtime_sec=61.174 load_sec=23.751
+  k=3 q=0.1 seed=2 samples=575179 unique=2 runtime_sec=62.631 load_sec=23.391
+  k=3 q=0.1 seed=3 samples=574661 unique=2 runtime_sec=62.924 load_sec=23.866
+RAND-ESU aggregate: runs=3 total_samples=1726543 mean_runtime_sec=62.243 mean_unique_classes=2.000
+Parallel metrics: compute_time_sec=186.728 wall_time_sec=144.495 speedup=1.292 efficiency_percent=2.94

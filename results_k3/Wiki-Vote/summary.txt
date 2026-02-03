@@ -1,0 +1,61 @@
+Dataset: Wiki-Vote
+Directed: True
+File: Wiki-Vote.txt
+Max nodes: All
+-- ESA baseline runs --
+ESA baseline k=3 q=0.1 seed=1
+  samples=5000 unique_classes=13
+  runtime_sec=5.457
+  csv=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed1_samples5000.csv
+  meta=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed1_samples5000_meta.json
+  plot=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed1_samples5000_motifs.png
+ESA baseline k=3 q=0.1 seed=2
+  samples=5000 unique_classes=13
+  runtime_sec=5.510
+  csv=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed2_samples5000.csv
+  meta=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed2_samples5000_meta.json
+  plot=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed2_samples5000_motifs.png
+ESA baseline k=3 q=0.1 seed=3
+  samples=5000 unique_classes=13
+  runtime_sec=5.435
+  csv=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed3_samples5000.csv
+  meta=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed3_samples5000_meta.json
+  plot=Wiki-Vote/k3/baseline/esa/esa_q0.1_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: Wiki-Vote ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [3] | q values: [0.1] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 51.5s
+
+-- Aggregated summary for k=3 --
+seeds=[1, 2, 3] qs=[0.1]
+realized_fraction: mean=0.100007 min=0.099995 max=0.100015
+plots: Wiki-Vote/k3/plots/top12_horizontal.png, top12_boxplot.png
+overlay: Wiki-Vote/k3/overlay/overlay_k3_q0.1_seed1.png
+overlay: Wiki-Vote/k3/overlay/overlay_k3_q0.1_seed2.png
+overlay: Wiki-Vote/k3/overlay/overlay_k3_q0.1_seed3.png
+
+-- Significance (edge swaps) --
+k=3 q=0.1 random_graphs=100 swaps_per_edge=100
+seeds=[1, 2, 3]
+csv: Wiki-Vote/k3/significance/significance_q0.1_fine.csv
+meta: Wiki-Vote/k3/significance/significance_q0.1_fine_meta.json
+note: enrichment_ratio=orig_concentration/rand_mean_concentration is paper-aligned; z-scores are for reference and can be extreme when rand_std is tiny.
+top_z_scores:
+  120D: z=325.594 ratio=2.206 orig=0.00342 rand_mean=0.00155
+  030T: z=304.021 ratio=1.717 orig=0.03474 rand_mean=0.02023
+  120U: z=167.248 ratio=2.140 orig=0.00437 rand_mean=0.00204
+  210: z=141.422 ratio=2.091 orig=0.00116 rand_mean=0.00055
+  120C: z=87.019 ratio=1.258 orig=0.00133 rand_mean=0.00106
+top_enrichment_ratios:
+  300: ratio=3.490 orig=0.00016 rand_mean=0.00005
+  120D: ratio=2.206 orig=0.00342 rand_mean=0.00155
+  120U: ratio=2.140 orig=0.00437 rand_mean=0.00204
+  210: ratio=2.091 orig=0.00116 rand_mean=0.00055
+  030T: ratio=1.717 orig=0.03474 rand_mean=0.02023
+comparison_outputs: Wiki-Vote/k3/significance_compare/significance_ensemble_baseline.csv, Wiki-Vote/k3/significance_compare/significance_ensemble_summary.txt
+-- Significance (direct BC-inspired) --
+csv: Wiki-Vote/k3/significance_direct_bc/direct_bc_exact_T100000_seed1_with_lambda.csv
+-- Significance Comparison (Ensemble vs Direct) --
+plots: Wiki-Vote/k3/significance_compare/scatter_rand_mean_vs_direct_expected_bc.png, Wiki-Vote/k3/significance_compare/scatter_orig_vs_direct_expected_bc.png

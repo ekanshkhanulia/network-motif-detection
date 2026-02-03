@@ -1,0 +1,15 @@
+{
+  "dataset": "roadNet-CA",
+  "directed": false,
+  "k": 3,
+  "q": 0.1,
+  "schedule": "fine",
+  "seed": 3,
+  "samples_requested": 5000,
+  "total_samples": 5000,
+  "unique_motif_classes": 2,
+  "runtime_sec": 1283.7630145549774,
+  "algo": "ESA",
+  "max_retries": 40,
+  "probability_correction": true
+}

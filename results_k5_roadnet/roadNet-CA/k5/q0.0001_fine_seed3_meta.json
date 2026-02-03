@@ -1,0 +1,26 @@
+{
+  "dataset": "roadNet-CA",
+  "file": "roadNet-CA.txt",
+  "directed": false,
+  "n": 1965206,
+  "m": 2766607,
+  "k": 5,
+  "q": 0.0001,
+  "p_depth": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0001
+  ],
+  "child_selection": "bernoulli",
+  "schedule": "fine",
+  "seed": 3,
+  "runtime_sec": 64.60815739631653,
+  "loaded_sec": 22.815433502197266,
+  "total_samples": 3690,
+  "unique_motif_classes": 12,
+  "total_subgraphs": null,
+  "realized_fraction": null,
+  "max_nodes": null
+}

@@ -1,0 +1,2 @@
+dataset,k,n,m,avg_runtime_sec,avg_samples,samples_per_sec,runtime_per_edge
+roadNet-CA,4,1965206,2766607,61.22520208358765,139324.33333333334,2275.6043033246497,2.2130068377470183e-05

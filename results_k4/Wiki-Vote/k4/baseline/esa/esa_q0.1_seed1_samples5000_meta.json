@@ -1,0 +1,15 @@
+{
+  "dataset": "Wiki-Vote",
+  "directed": true,
+  "k": 4,
+  "q": 0.1,
+  "schedule": "fine",
+  "seed": 1,
+  "samples_requested": 5000,
+  "total_samples": 5000,
+  "unique_motif_classes": 114,
+  "runtime_sec": 10.10243844985962,
+  "algo": "ESA",
+  "max_retries": 40,
+  "probability_correction": true
+}

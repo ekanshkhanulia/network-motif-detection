@@ -1,0 +1,37 @@
+Dataset: Wiki-Vote
+Directed: True
+File: Wiki-Vote.txt
+Max nodes: All
+Allocated cores: 15/44
+-- ESA baseline runs --
+ESA baseline k=5 q=0.0001 seed=1
+  samples=5000 unique_classes=576
+  runtime_sec=36.397
+  csv=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed1_samples5000.csv
+  meta=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed1_samples5000_meta.json
+  plot=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed1_samples5000_motifs.png
+ESA baseline k=5 q=0.0001 seed=2
+  samples=5000 unique_classes=617
+  runtime_sec=36.400
+  csv=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed2_samples5000.csv
+  meta=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed2_samples5000_meta.json
+  plot=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed2_samples5000_motifs.png
+ESA baseline k=5 q=0.0001 seed=3
+  samples=5000 unique_classes=634
+  runtime_sec=36.783
+  csv=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed3_samples5000.csv
+  meta=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed3_samples5000_meta.json
+  plot=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: Wiki-Vote ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [5] | q values: [0.0001] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 38184.0s
+
+-- Aggregated summary for k=5 --
+seeds=[1, 2, 3] qs=[0.0001]
+plots: Wiki-Vote/k5/plots/top12_horizontal.png, top12_boxplot.png
+overlay: Wiki-Vote/k5/overlay/overlay_k5_q0.0001_seed1.png
+overlay: Wiki-Vote/k5/overlay/overlay_k5_q0.0001_seed2.png
+overlay: Wiki-Vote/k5/overlay/overlay_k5_q0.0001_seed3.png

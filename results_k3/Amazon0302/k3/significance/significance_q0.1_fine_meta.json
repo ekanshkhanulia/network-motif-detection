@@ -1,0 +1,18 @@
+{
+  "dataset": "Amazon0302",
+  "k": 3,
+  "q": 0.1,
+  "schedule": "fine",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "random_graphs": 100,
+  "swaps_per_edge": 100,
+  "n": 262111,
+  "m": 1234877,
+  "max_nodes": null,
+  "ratio_definition": "orig_concentration / rand_mean_concentration",
+  "z_score_note": "Z-scores are provided for reference; Wernicke (2005) reports ratios of observed to mean random concentrations. Z can be extreme when rand_std_concentration is tiny."
+}

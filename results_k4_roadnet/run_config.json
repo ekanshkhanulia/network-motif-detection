@@ -1,0 +1,53 @@
+{
+  "experiment_type": "RAND-ESU parallel with ESA baseline",
+  "started_at": "2026-01-24 10:35:05",
+  "datasets": [
+    "roadNet-CA"
+  ],
+  "k_values": [
+    4
+  ],
+  "q_values": [
+    0.01
+  ],
+  "schedule": "fine",
+  "child_selection": "bernoulli",
+  "memory_optimized": true,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "max_nodes": null,
+  "max_workers": 44,
+  "dataset_workers": 1,
+  "cores_per_dataset_base": 44,
+  "extra_dataset_cores": 0,
+  "dataset_core_allocations": {
+    "roadNet-CA": 44
+  },
+  "baseline": {
+    "algorithm": "esa",
+    "samples": 5000,
+    "max_retries": 40,
+    "plot_enabled": true,
+    "probability_correction": true
+  },
+  "significance": {
+    "method": "none",
+    "k": null,
+    "q": null,
+    "seeds": null,
+    "random_graphs": null,
+    "swaps_per_edge": null,
+    "full_enumeration": null,
+    "direct_T": null,
+    "direct_seed": null,
+    "include_lambda_correction": null
+  },
+  "environment": {
+    "python_version": "3.12.12",
+    "platform": "Linux-6.6.105+-x86_64-with-glibc2.35",
+    "cpu_count": 44
+  }
+}

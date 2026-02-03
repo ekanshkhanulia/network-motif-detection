@@ -1,0 +1,36 @@
+Dataset: Email-Enron
+Directed: False
+File: Email-Enron.txt
+Max nodes: All
+-- ESA baseline runs --
+ESA baseline k=4 q=0.01 seed=1
+  samples=5000 unique_classes=6
+  runtime_sec=27.322
+  csv=Email-Enron/k4/baseline/esa/esa_q0.01_seed1_samples5000.csv
+  meta=Email-Enron/k4/baseline/esa/esa_q0.01_seed1_samples5000_meta.json
+  plot=Email-Enron/k4/baseline/esa/esa_q0.01_seed1_samples5000_motifs.png
+ESA baseline k=4 q=0.01 seed=2
+  samples=5000 unique_classes=6
+  runtime_sec=27.495
+  csv=Email-Enron/k4/baseline/esa/esa_q0.01_seed2_samples5000.csv
+  meta=Email-Enron/k4/baseline/esa/esa_q0.01_seed2_samples5000_meta.json
+  plot=Email-Enron/k4/baseline/esa/esa_q0.01_seed2_samples5000_motifs.png
+ESA baseline k=4 q=0.01 seed=3
+  samples=5000 unique_classes=6
+  runtime_sec=27.649
+  csv=Email-Enron/k4/baseline/esa/esa_q0.01_seed3_samples5000.csv
+  meta=Email-Enron/k4/baseline/esa/esa_q0.01_seed3_samples5000_meta.json
+  plot=Email-Enron/k4/baseline/esa/esa_q0.01_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: Email-Enron ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [4] | q values: [0.01] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 6043.5s
+
+-- Aggregated summary for k=4 --
+seeds=[1, 2, 3] qs=[0.01]
+plots: Email-Enron/k4/plots/top12_horizontal.png, top12_boxplot.png
+overlay: Email-Enron/k4/overlay/overlay_k4_q0.01_seed1.png
+overlay: Email-Enron/k4/overlay/overlay_k4_q0.01_seed2.png
+overlay: Email-Enron/k4/overlay/overlay_k4_q0.01_seed3.png

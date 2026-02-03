@@ -1,0 +1,15 @@
+{
+  "dataset": "CA-AstroPh",
+  "directed": false,
+  "k": 3,
+  "q": 0.1,
+  "schedule": "fine",
+  "seed": 2,
+  "samples_requested": 5000,
+  "total_samples": 5000,
+  "unique_motif_classes": 2,
+  "runtime_sec": 9.899631261825562,
+  "algo": "ESA",
+  "max_retries": 40,
+  "probability_correction": true
+}

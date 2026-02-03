@@ -1,0 +1,3 @@
+dataset,directed,k,q,schedule,seed,total_samples,signature,count,concentration
+roadNet-CA,False,3,0.1,fine,1,576703,001001110,564616,0.9790412049183028
+roadNet-CA,False,3,0.1,fine,1,576703,011101110,12087,0.020958795081697165

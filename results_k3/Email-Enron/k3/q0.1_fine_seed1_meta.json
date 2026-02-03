@@ -1,0 +1,24 @@
+{
+  "dataset": "Email-Enron",
+  "file": "Email-Enron.txt",
+  "directed": false,
+  "n": 36692,
+  "m": 183831,
+  "k": 3,
+  "q": 0.1,
+  "p_depth": [
+    1.0,
+    1.0,
+    0.1
+  ],
+  "child_selection": "bernoulli",
+  "schedule": "fine",
+  "seed": 1,
+  "runtime_sec": 67.16326880455017,
+  "loaded_sec": 0.9698874950408936,
+  "total_samples": 2410602,
+  "unique_motif_classes": 2,
+  "total_subgraphs": 24112805,
+  "realized_fraction": 0.09997186142383684,
+  "max_nodes": null
+}

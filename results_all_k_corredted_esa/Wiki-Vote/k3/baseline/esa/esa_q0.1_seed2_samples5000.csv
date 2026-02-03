@@ -1,0 +1,14 @@
+dataset,directed,k,q,schedule,seed,samples_requested,total_samples,signature,count,concentration,algo
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,000100100,1270,0.254,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,000000110,2104,0.4208,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,000001100,1059,0.2118,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,000100110,178,0.0356,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,001001010,134,0.0268,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,000001110,186,0.0372,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,001101110,5,0.001,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,001001110,14,0.0028,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,000101110,18,0.0036,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,001101100,21,0.0042,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,001100110,9,0.0018,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,011101110,0,0.0,ESA
+Wiki-Vote,True,3,0.1,fine,2,5000,5000,001100010,2,0.0004,ESA

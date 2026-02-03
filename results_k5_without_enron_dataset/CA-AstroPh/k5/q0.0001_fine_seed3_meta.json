@@ -1,0 +1,26 @@
+{
+  "dataset": "CA-AstroPh",
+  "file": "CA-AstroPh.txt",
+  "directed": false,
+  "n": 18771,
+  "m": 198050,
+  "k": 5,
+  "q": 0.0001,
+  "p_depth": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0001
+  ],
+  "child_selection": "bernoulli",
+  "schedule": "fine",
+  "seed": 3,
+  "runtime_sec": 17923.07619357109,
+  "loaded_sec": 0.7912499904632568,
+  "total_samples": 10885263,
+  "unique_motif_classes": 21,
+  "total_subgraphs": null,
+  "realized_fraction": null,
+  "max_nodes": null
+}

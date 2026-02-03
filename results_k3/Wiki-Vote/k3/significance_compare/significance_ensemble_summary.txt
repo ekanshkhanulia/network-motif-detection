@@ -1,0 +1,26 @@
+Ensemble baseline (edge swaps) for Wiki-Vote, k=3, seeds=[1, 2, 3]
+random_graphs=100 swaps_per_edge=100 q=0.1 schedule=fine
+Metrics: enrichment_ratio=orig_concentration/rand_mean_concentration (paper-aligned). Z-scores are included for reference and can be extreme when rand_std_concentration is tiny.
+Top-10 triads by mean concentration in ensemble (rand_mean_concentration):
+  021D: mean=0.434316 std=3.04456e-05
+  021U: mean=0.249266 std=1.90687e-05
+  021C: mean=0.211738 std=2.48538e-05
+  111U: mean=0.0455243 std=2.95449e-05
+  111D: mean=0.0301215 std=7.84963e-06
+  030T: mean=0.0202335 std=4.77276e-05
+  201: mean=0.00291631 std=1.01644e-05
+  120U: mean=0.00204077 std=1.39113e-05
+  120D: mean=0.00155089 std=5.74265e-06
+  120C: mean=0.0010556 std=3.12582e-06
+
+Top-10 triads by enrichment ratio (orig vs ensemble mean):
+  300: ratio=3.49028 orig=0.000163295 rand_mean=4.67857e-05
+  120D: ratio=2.20561 orig=0.00342066 rand_mean=0.00155089
+  120U: ratio=2.14008 orig=0.00436742 rand_mean=0.00204077
+  210: ratio=2.09134 orig=0.00115981 rand_mean=0.000554577
+  030T: ratio=1.71714 orig=0.0347438 rand_mean=0.0202335
+  120C: ratio=1.25768 orig=0.00132761 rand_mean=0.0010556
+  021D: ratio=1.00089 orig=0.434703 rand_mean=0.434316
+  021C: ratio=0.974059 orig=0.206245 rand_mean=0.211738
+  021U: ratio=0.973185 orig=0.242582 rand_mean=0.249266
+  111U: ratio=0.920792 orig=0.0419184 rand_mean=0.0455243

@@ -1,0 +1,53 @@
+{
+  "experiment_type": "RAND-ESU parallel with ESA baseline",
+  "started_at": "2026-01-14 17:08:31",
+  "datasets": [
+    "Wiki-Vote",
+    "Amazon0302",
+    "CA-AstroPh",
+    "Email-Enron"
+  ],
+  "k_values": [
+    3
+  ],
+  "q_values": [
+    0.1
+  ],
+  "schedule": "fine",
+  "child_selection": "bernoulli",
+  "memory_optimized": true,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "max_nodes": null,
+  "max_workers": 44,
+  "baseline": {
+    "algorithm": "esa",
+    "samples": 5000,
+    "max_retries": 40,
+    "plot_enabled": true,
+    "probability_correction": true
+  },
+  "significance": {
+    "method": "both",
+    "k": 3,
+    "q": 0.1,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "random_graphs": 100,
+    "swaps_per_edge": "auto",
+    "direct_T": 100000,
+    "direct_seed": 1,
+    "include_lambda_correction": true
+  },
+  "environment": {
+    "python_version": "3.12.12",
+    "platform": "Linux-6.6.105+-x86_64-with-glibc2.35",
+    "cpu_count": 44
+  }
+}

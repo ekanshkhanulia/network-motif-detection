@@ -1,0 +1,28 @@
+Dataset: CA-AstroPh
+Directed: False
+k values: [3]
+q values: [0.1]
+Seeds: [1, 2, 3]
+Baseline: esa
+
+ESA baseline results per seed:
+  k=3 q=0.1 seed=1 samples=5000 unique=2 runtime_sec=12.701
+    csv=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed1_samples5000.csv
+    meta=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed1_samples5000_meta.json
+    plot=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed1_samples5000_motifs.png
+  k=3 q=0.1 seed=2 samples=5000 unique=2 runtime_sec=12.814
+    csv=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed2_samples5000.csv
+    meta=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed2_samples5000_meta.json
+    plot=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed2_samples5000_motifs.png
+  k=3 q=0.1 seed=3 samples=5000 unique=2 runtime_sec=12.817
+    csv=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed3_samples5000.csv
+    meta=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed3_samples5000_meta.json
+    plot=CA-AstroPh/k3/baseline/esa/esa_q0.1_seed3_samples5000_motifs.png
+Baseline aggregate: runs=3 total_samples=15000 mean_runtime_sec=12.777
+
+RAND-ESU results per seed:
+  k=3 q=0.1 seed=1 samples=1005193 unique=2 runtime_sec=9.898 load_sec=2.341
+  k=3 q=0.1 seed=2 samples=1005134 unique=2 runtime_sec=9.954 load_sec=2.481
+  k=3 q=0.1 seed=3 samples=1004594 unique=2 runtime_sec=9.929 load_sec=2.475
+RAND-ESU aggregate: runs=3 total_samples=3014921 mean_runtime_sec=9.927 mean_unique_classes=2.000
+Parallel metrics: compute_time_sec=29.781 wall_time_sec=38.843 speedup=0.767 efficiency_percent=1.74

@@ -1,0 +1,28 @@
+Dataset: Amazon0302
+Directed: True
+k values: [3]
+q values: [0.1]
+Seeds: [1, 2, 3]
+Baseline: esa
+
+ESA baseline results per seed:
+  k=3 q=0.1 seed=1 samples=5000 unique=13 runtime_sec=139.453
+    csv=Amazon0302/k3/baseline/esa/esa_q0.1_seed1_samples5000.csv
+    meta=Amazon0302/k3/baseline/esa/esa_q0.1_seed1_samples5000_meta.json
+    plot=Amazon0302/k3/baseline/esa/esa_q0.1_seed1_samples5000_motifs.png
+  k=3 q=0.1 seed=2 samples=5000 unique=13 runtime_sec=139.497
+    csv=Amazon0302/k3/baseline/esa/esa_q0.1_seed2_samples5000.csv
+    meta=Amazon0302/k3/baseline/esa/esa_q0.1_seed2_samples5000_meta.json
+    plot=Amazon0302/k3/baseline/esa/esa_q0.1_seed2_samples5000_motifs.png
+  k=3 q=0.1 seed=3 samples=5000 unique=13 runtime_sec=139.714
+    csv=Amazon0302/k3/baseline/esa/esa_q0.1_seed3_samples5000.csv
+    meta=Amazon0302/k3/baseline/esa/esa_q0.1_seed3_samples5000_meta.json
+    plot=Amazon0302/k3/baseline/esa/esa_q0.1_seed3_samples5000_motifs.png
+Baseline aggregate: runs=3 total_samples=15000 mean_runtime_sec=139.555
+
+RAND-ESU results per seed:
+  k=3 q=0.1 seed=1 samples=768083 unique=13 runtime_sec=24.165 load_sec=7.357
+  k=3 q=0.1 seed=2 samples=767984 unique=13 runtime_sec=23.813 load_sec=7.664
+  k=3 q=0.1 seed=3 samples=769038 unique=13 runtime_sec=23.861 load_sec=7.752
+RAND-ESU aggregate: runs=3 total_samples=2305105 mean_runtime_sec=23.946 mean_unique_classes=13.000
+Parallel metrics: compute_time_sec=71.839 wall_time_sec=143.675 speedup=0.500 efficiency_percent=1.14

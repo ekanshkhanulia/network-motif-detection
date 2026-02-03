@@ -1,0 +1,38 @@
+Dataset: Email-Enron
+Directed: False
+File: Email-Enron.txt
+Max nodes: All
+-- ESA baseline runs --
+ESA baseline k=3 q=0.1 seed=1
+  samples=5000 unique_classes=2
+  runtime_sec=24.273
+  csv=Email-Enron/k3/baseline/esa/esa_q0.1_seed1_samples5000.csv
+  meta=Email-Enron/k3/baseline/esa/esa_q0.1_seed1_samples5000_meta.json
+  plot=Email-Enron/k3/baseline/esa/esa_q0.1_seed1_samples5000_motifs.png
+ESA baseline k=3 q=0.1 seed=2
+  samples=5000 unique_classes=2
+  runtime_sec=24.220
+  csv=Email-Enron/k3/baseline/esa/esa_q0.1_seed2_samples5000.csv
+  meta=Email-Enron/k3/baseline/esa/esa_q0.1_seed2_samples5000_meta.json
+  plot=Email-Enron/k3/baseline/esa/esa_q0.1_seed2_samples5000_motifs.png
+ESA baseline k=3 q=0.1 seed=3
+  samples=5000 unique_classes=2
+  runtime_sec=24.254
+  csv=Email-Enron/k3/baseline/esa/esa_q0.1_seed3_samples5000.csv
+  meta=Email-Enron/k3/baseline/esa/esa_q0.1_seed3_samples5000_meta.json
+  plot=Email-Enron/k3/baseline/esa/esa_q0.1_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: Email-Enron ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [3] | q values: [0.1] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 309.4s
+
+-- Aggregated summary for k=3 --
+seeds=[1, 2, 3] qs=[0.1]
+realized_fraction: mean=0.100055 min=0.099972 max=0.100130
+plots: Email-Enron/k3/plots/top12_horizontal.png, top12_boxplot.png
+overlay: Email-Enron/k3/overlay/overlay_k3_q0.1_seed1.png
+overlay: Email-Enron/k3/overlay/overlay_k3_q0.1_seed2.png
+overlay: Email-Enron/k3/overlay/overlay_k3_q0.1_seed3.png
+[significance] Skipping edge-swap significance for undirected dataset

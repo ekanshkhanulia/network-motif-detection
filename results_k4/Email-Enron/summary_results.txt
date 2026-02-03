@@ -1,0 +1,28 @@
+Dataset: Email-Enron
+Directed: False
+k values: [4]
+q values: [0.01]
+Seeds: [1, 2, 3]
+Baseline: esa
+
+ESA baseline results per seed:
+  k=4 q=0.01 seed=1 samples=5000 unique=6 runtime_sec=27.322
+    csv=Email-Enron/k4/baseline/esa/esa_q0.01_seed1_samples5000.csv
+    meta=Email-Enron/k4/baseline/esa/esa_q0.01_seed1_samples5000_meta.json
+    plot=Email-Enron/k4/baseline/esa/esa_q0.01_seed1_samples5000_motifs.png
+  k=4 q=0.01 seed=2 samples=5000 unique=6 runtime_sec=27.495
+    csv=Email-Enron/k4/baseline/esa/esa_q0.01_seed2_samples5000.csv
+    meta=Email-Enron/k4/baseline/esa/esa_q0.01_seed2_samples5000_meta.json
+    plot=Email-Enron/k4/baseline/esa/esa_q0.01_seed2_samples5000_motifs.png
+  k=4 q=0.01 seed=3 samples=5000 unique=6 runtime_sec=27.649
+    csv=Email-Enron/k4/baseline/esa/esa_q0.01_seed3_samples5000.csv
+    meta=Email-Enron/k4/baseline/esa/esa_q0.01_seed3_samples5000_meta.json
+    plot=Email-Enron/k4/baseline/esa/esa_q0.01_seed3_samples5000_motifs.png
+Baseline aggregate: runs=3 total_samples=15000 mean_runtime_sec=27.489
+
+RAND-ESU results per seed:
+  k=4 q=0.01 seed=1 samples=62589290 unique=6 runtime_sec=5925.536 load_sec=0.766
+  k=4 q=0.01 seed=2 samples=62590896 unique=6 runtime_sec=5923.074 load_sec=0.797
+  k=4 q=0.01 seed=3 samples=62586049 unique=6 runtime_sec=6042.543 load_sec=0.802
+RAND-ESU aggregate: runs=3 total_samples=187766235 mean_runtime_sec=5963.718 mean_unique_classes=6.000
+Parallel metrics: compute_time_sec=17891.153 wall_time_sec=6043.529 speedup=2.960 efficiency_percent=6.73

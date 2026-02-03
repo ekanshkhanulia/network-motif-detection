@@ -1,0 +1,36 @@
+Dataset: CA-AstroPh
+Directed: False
+File: CA-AstroPh.txt
+Max nodes: All
+-- ESA baseline runs --
+ESA baseline k=4 q=0.01 seed=1
+  samples=5000 unique_classes=6
+  runtime_sec=15.749
+  csv=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed1_samples5000.csv
+  meta=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed1_samples5000_meta.json
+  plot=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed1_samples5000_motifs.png
+ESA baseline k=4 q=0.01 seed=2
+  samples=5000 unique_classes=6
+  runtime_sec=15.748
+  csv=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed2_samples5000.csv
+  meta=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed2_samples5000_meta.json
+  plot=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed2_samples5000_motifs.png
+ESA baseline k=4 q=0.01 seed=3
+  samples=5000 unique_classes=6
+  runtime_sec=15.819
+  csv=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed3_samples5000.csv
+  meta=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed3_samples5000_meta.json
+  plot=CA-AstroPh/k4/baseline/esa/esa_q0.01_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: CA-AstroPh ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [4] | q values: [0.01] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 445.8s
+
+-- Aggregated summary for k=4 --
+seeds=[1, 2, 3] qs=[0.01]
+plots: CA-AstroPh/k4/plots/top12_horizontal.png, top12_boxplot.png
+overlay: CA-AstroPh/k4/overlay/overlay_k4_q0.01_seed1.png
+overlay: CA-AstroPh/k4/overlay/overlay_k4_q0.01_seed2.png
+overlay: CA-AstroPh/k4/overlay/overlay_k4_q0.01_seed3.png

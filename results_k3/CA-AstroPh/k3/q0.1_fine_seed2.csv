@@ -1,0 +1,3 @@
+dataset,directed,k,q,schedule,seed,total_samples,signature,count,concentration
+CA-AstroPh,False,3,0.1,fine,2,1005134,001001110,869407,0.864966263204707
+CA-AstroPh,False,3,0.1,fine,2,1005134,011101110,135727,0.13503373679529296

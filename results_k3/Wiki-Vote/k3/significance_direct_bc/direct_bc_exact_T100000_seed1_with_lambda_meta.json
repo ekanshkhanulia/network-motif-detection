@@ -1,0 +1,17 @@
+{
+  "dataset": "Wiki-Vote",
+  "T": 100000,
+  "T_connected": 13328802,
+  "observed_source": "full_enumeration",
+  "seed": 1,
+  "n": 7115,
+  "m": 103689,
+  "directed": true,
+  "method": "exact_bender_canfield",
+  "lambda_correction": true,
+  "lambda_original": 43.81183153468545,
+  "description": "Exact Bender-Canfield method per Wernicke (2005) Section 3",
+  "ratio_definition": "observed_concentration / expected_concentration",
+  "observed_note": "Observed concentrations come from full enumeration of connected triads in the original graph (ESU), not from sampled triples.",
+  "z_score_note": "Z-scores are included for reference; Wernicke (2005) reports ratios of observed to expected concentrations. Z can be extreme when expected variance is tiny."
+}

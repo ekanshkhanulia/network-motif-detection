@@ -1,0 +1,25 @@
+{
+  "dataset": "Amazon0302",
+  "file": "Amazon0302.txt",
+  "directed": true,
+  "n": 262111,
+  "m": 1234877,
+  "k": 4,
+  "q": 0.01,
+  "p_depth": [
+    1.0,
+    1.0,
+    1.0,
+    0.01
+  ],
+  "child_selection": "bernoulli",
+  "schedule": "fine",
+  "seed": 1,
+  "runtime_sec": 89.91750741004944,
+  "loaded_sec": 7.409257411956787,
+  "total_samples": 1947501,
+  "unique_motif_classes": 197,
+  "total_subgraphs": null,
+  "realized_fraction": null,
+  "max_nodes": null
+}

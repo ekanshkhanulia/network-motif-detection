@@ -1,0 +1,28 @@
+Significance via edge swaps (degree-preserving ensemble)
+Dataset=Wiki-Vote k=3 q=0.1 schedule=fine directed=True
+random_graphs=100 swaps_per_edge=100 seeds=[1, 2, 3]
+
+Metrics: enrichment_ratio=orig_concentration/rand_mean_concentration (paper-aligned). Z-scores are included for reference and can be extreme when rand_std_concentration is tiny.
+Top-10 motifs by enrichment ratio (orig vs ensemble mean):
+  sig=011101110 ratio=3.49028 orig=0.000163295 rand_mean=4.67857e-05
+  sig=001101100 ratio=2.20561 orig=0.00342066 rand_mean=0.00155089
+  sig=000101110 ratio=2.14008 orig=0.00436742 rand_mean=0.00204077
+  sig=001101110 ratio=2.09134 orig=0.00115981 rand_mean=0.000554577
+  sig=000100110 ratio=1.71714 orig=0.0347438 rand_mean=0.0202335
+  sig=001100110 ratio=1.25768 orig=0.00132761 rand_mean=0.0010556
+  sig=000000110 ratio=1.00089 orig=0.434703 rand_mean=0.434316
+  sig=000001100 ratio=0.974059 orig=0.206245 rand_mean=0.211738
+  sig=000100100 ratio=0.973185 orig=0.242582 rand_mean=0.249266
+  sig=000001110 ratio=0.920792 orig=0.0419184 rand_mean=0.0455243
+
+Top-10 motifs by z-score (orig vs ensemble):
+  sig=001101100 z=325.594 orig=0.00342066 rand_mean=0.00155089 rand_std=5.74265e-06
+  sig=000100110 z=304.021 orig=0.0347438 rand_mean=0.0202335 rand_std=4.77276e-05
+  sig=000101110 z=167.248 orig=0.00436742 rand_mean=0.00204077 rand_std=1.39113e-05
+  sig=001101110 z=141.422 orig=0.00115981 rand_mean=0.000554577 rand_std=4.2796e-06
+  sig=001100110 z=87.019 orig=0.00132761 rand_mean=0.0010556 rand_std=3.12582e-06
+  sig=011101110 z=57.020 orig=0.000163295 rand_mean=4.67857e-05 rand_std=2.04331e-06
+  sig=000000110 z=12.708 orig=0.434703 rand_mean=0.434316 rand_std=3.04456e-05
+  sig=001100010 z=-9.089 orig=0.000507133 rand_mean=0.000635597 rand_std=1.41345e-05
+  sig=001001110 z=-79.763 orig=0.00210556 rand_mean=0.00291631 rand_std=1.01644e-05
+  sig=000001110 z=-122.048 orig=0.0419184 rand_mean=0.0455243 rand_std=2.95449e-05

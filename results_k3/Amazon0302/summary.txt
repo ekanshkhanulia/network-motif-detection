@@ -1,0 +1,61 @@
+Dataset: Amazon0302
+Directed: True
+File: Amazon0302.txt
+Max nodes: All
+-- ESA baseline runs --
+ESA baseline k=3 q=0.1 seed=1
+  samples=5000 unique_classes=13
+  runtime_sec=139.453
+  csv=Amazon0302/k3/baseline/esa/esa_q0.1_seed1_samples5000.csv
+  meta=Amazon0302/k3/baseline/esa/esa_q0.1_seed1_samples5000_meta.json
+  plot=Amazon0302/k3/baseline/esa/esa_q0.1_seed1_samples5000_motifs.png
+ESA baseline k=3 q=0.1 seed=2
+  samples=5000 unique_classes=13
+  runtime_sec=139.497
+  csv=Amazon0302/k3/baseline/esa/esa_q0.1_seed2_samples5000.csv
+  meta=Amazon0302/k3/baseline/esa/esa_q0.1_seed2_samples5000_meta.json
+  plot=Amazon0302/k3/baseline/esa/esa_q0.1_seed2_samples5000_motifs.png
+ESA baseline k=3 q=0.1 seed=3
+  samples=5000 unique_classes=13
+  runtime_sec=139.714
+  csv=Amazon0302/k3/baseline/esa/esa_q0.1_seed3_samples5000.csv
+  meta=Amazon0302/k3/baseline/esa/esa_q0.1_seed3_samples5000_meta.json
+  plot=Amazon0302/k3/baseline/esa/esa_q0.1_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: Amazon0302 ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [3] | q values: [0.1] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 143.7s
+
+-- Aggregated summary for k=3 --
+seeds=[1, 2, 3] qs=[0.1]
+realized_fraction: mean=0.099984 min=0.099934 max=0.100071
+plots: Amazon0302/k3/plots/top12_horizontal.png, top12_boxplot.png
+overlay: Amazon0302/k3/overlay/overlay_k3_q0.1_seed1.png
+overlay: Amazon0302/k3/overlay/overlay_k3_q0.1_seed2.png
+overlay: Amazon0302/k3/overlay/overlay_k3_q0.1_seed3.png
+
+-- Significance (edge swaps) --
+k=3 q=0.1 random_graphs=100 swaps_per_edge=100
+seeds=[1, 2, 3]
+csv: Amazon0302/k3/significance/significance_q0.1_fine.csv
+meta: Amazon0302/k3/significance/significance_q0.1_fine_meta.json
+note: enrichment_ratio=orig_concentration/rand_mean_concentration is paper-aligned; z-scores are for reference and can be extreme when rand_std is tiny.
+top_z_scores:
+  030C: z=1729136379.385 ratio=2262.943 orig=0.00025 rand_mean=0.00000
+  300: z=173514.659 ratio=71725.845 orig=0.01565 rand_mean=0.00000
+  030T: z=153999.918 ratio=2713.452 orig=0.01597 rand_mean=0.00001
+  120U: z=83051.108 ratio=6235.215 orig=0.01549 rand_mean=0.00000
+  210: z=79894.984 ratio=20419.075 orig=0.02322 rand_mean=0.00000
+top_enrichment_ratios:
+  300: ratio=71725.845 orig=0.01565 rand_mean=0.00000
+  120D: ratio=26758.861 orig=0.01966 rand_mean=0.00000
+  210: ratio=20419.075 orig=0.02322 rand_mean=0.00000
+  120U: ratio=6235.215 orig=0.01549 rand_mean=0.00000
+  120C: ratio=3095.396 orig=0.00352 rand_mean=0.00000
+comparison_outputs: Amazon0302/k3/significance_compare/significance_ensemble_baseline.csv, Amazon0302/k3/significance_compare/significance_ensemble_summary.txt
+-- Significance (direct BC-inspired) --
+csv: Amazon0302/k3/significance_direct_bc/direct_bc_exact_T100000_seed1_with_lambda.csv
+-- Significance Comparison (Ensemble vs Direct) --
+plots: Amazon0302/k3/significance_compare/scatter_rand_mean_vs_direct_expected_bc.png, Amazon0302/k3/significance_compare/scatter_orig_vs_direct_expected_bc.png

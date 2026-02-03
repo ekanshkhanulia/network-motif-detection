@@ -1,0 +1,24 @@
+{
+  "dataset": "Wiki-Vote",
+  "file": "Wiki-Vote.txt",
+  "directed": true,
+  "n": 7115,
+  "m": 103689,
+  "k": 3,
+  "q": 0.1,
+  "p_depth": [
+    1.0,
+    1.0,
+    0.1
+  ],
+  "child_selection": "bernoulli",
+  "schedule": "fine",
+  "seed": 1,
+  "runtime_sec": 11.898735046386719,
+  "loaded_sec": 0.26953792572021484,
+  "total_samples": 1333084,
+  "unique_motif_classes": 13,
+  "total_subgraphs": 13328802,
+  "realized_fraction": 0.10001529019637324,
+  "max_nodes": null
+}

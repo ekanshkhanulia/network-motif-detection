@@ -1,0 +1,26 @@
+Ensemble baseline (edge swaps) for Amazon0302, k=3, seeds=[1, 2, 3]
+random_graphs=100 swaps_per_edge=100 q=0.1 schedule=fine
+Metrics: enrichment_ratio=orig_concentration/rand_mean_concentration (paper-aligned). Z-scores are included for reference and can be extreme when rand_std_concentration is tiny.
+Top-10 triads by mean concentration in ensemble (rand_mean_concentration):
+  021U: mean=0.434964 std=6.84231e-07
+  111D: mean=0.196853 std=8.54732e-07
+  111U: mean=0.110726 std=3.76219e-07
+  021C: mean=0.10392 std=3.19842e-07
+  201: mean=0.087599 std=1.96949e-07
+  021D: mean=0.0659255 std=1.48548e-07
+  030T: mean=5.88368e-06 std=1.03631e-07
+  120U: mean=2.48461e-06 std=1.86507e-07
+  120C: mean=1.13704e-06 std=3.64046e-07
+  210: mean=1.13704e-06 std=2.90585e-07
+
+Top-10 triads by enrichment ratio (orig vs ensemble mean):
+  300: ratio=71725.8 orig=0.0156505 rand_mean=2.18198e-07
+  120D: ratio=26758.9 orig=0.0196581 rand_mean=7.34638e-07
+  210: ratio=20419.1 orig=0.0232174 rand_mean=1.13704e-06
+  120U: ratio=6235.22 orig=0.0154921 rand_mean=2.48461e-06
+  120C: ratio=3095.4 orig=0.0035196 rand_mean=1.13704e-06
+  030T: ratio=2713.45 orig=0.0159651 rand_mean=5.88368e-06
+  030C: ratio=2262.94 orig=0.000248126 rand_mean=1.09647e-07
+  021U: ratio=1.11415 orig=0.484615 rand_mean=0.434964
+  021C: ratio=0.995453 orig=0.103447 rand_mean=0.10392
+  111D: ratio=0.853035 orig=0.167923 rand_mean=0.196853

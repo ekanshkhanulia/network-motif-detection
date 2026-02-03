@@ -1,0 +1,37 @@
+Dataset: roadNet-CA
+Directed: False
+File: roadNet-CA.txt
+Max nodes: All
+Allocated cores: 44/44
+-- ESA baseline runs --
+ESA baseline k=4 q=0.01 seed=1
+  samples=5000 unique_classes=5
+  runtime_sec=1278.086
+  csv=roadNet-CA/k4/baseline/esa/esa_q0.01_seed1_samples5000.csv
+  meta=roadNet-CA/k4/baseline/esa/esa_q0.01_seed1_samples5000_meta.json
+  plot=roadNet-CA/k4/baseline/esa/esa_q0.01_seed1_samples5000_motifs.png
+ESA baseline k=4 q=0.01 seed=2
+  samples=5000 unique_classes=5
+  runtime_sec=1273.664
+  csv=roadNet-CA/k4/baseline/esa/esa_q0.01_seed2_samples5000.csv
+  meta=roadNet-CA/k4/baseline/esa/esa_q0.01_seed2_samples5000_meta.json
+  plot=roadNet-CA/k4/baseline/esa/esa_q0.01_seed2_samples5000_motifs.png
+ESA baseline k=4 q=0.01 seed=3
+  samples=5000 unique_classes=5
+  runtime_sec=1272.693
+  csv=roadNet-CA/k4/baseline/esa/esa_q0.01_seed3_samples5000.csv
+  meta=roadNet-CA/k4/baseline/esa/esa_q0.01_seed3_samples5000_meta.json
+  plot=roadNet-CA/k4/baseline/esa/esa_q0.01_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: roadNet-CA ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [4] | q values: [0.01] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 86.2s
+
+-- Aggregated summary for k=4 --
+seeds=[1, 2, 3] qs=[0.01]
+plots: roadNet-CA/k4/plots/top12_horizontal.png, top12_boxplot.png
+overlay: roadNet-CA/k4/overlay/overlay_k4_q0.01_seed1.png
+overlay: roadNet-CA/k4/overlay/overlay_k4_q0.01_seed2.png
+overlay: roadNet-CA/k4/overlay/overlay_k4_q0.01_seed3.png

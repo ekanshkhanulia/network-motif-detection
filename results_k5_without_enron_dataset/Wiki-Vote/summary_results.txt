@@ -1,0 +1,28 @@
+Dataset: Wiki-Vote
+Directed: True
+k values: [5]
+q values: [0.0001]
+Seeds: [1, 2, 3]
+Baseline: esa
+
+ESA baseline results per seed:
+  k=5 q=0.0001 seed=1 samples=5000 unique=576 runtime_sec=36.397
+    csv=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed1_samples5000.csv
+    meta=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed1_samples5000_meta.json
+    plot=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed1_samples5000_motifs.png
+  k=5 q=0.0001 seed=2 samples=5000 unique=617 runtime_sec=36.400
+    csv=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed2_samples5000.csv
+    meta=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed2_samples5000_meta.json
+    plot=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed2_samples5000_motifs.png
+  k=5 q=0.0001 seed=3 samples=5000 unique=634 runtime_sec=36.783
+    csv=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed3_samples5000.csv
+    meta=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed3_samples5000_meta.json
+    plot=Wiki-Vote/k5/baseline/esa/esa_q0.0001_seed3_samples5000_motifs.png
+Baseline aggregate: runs=3 total_samples=15000 mean_runtime_sec=36.526
+
+RAND-ESU results per seed:
+  k=5 q=0.0001 seed=1 samples=51981211 unique=6467 runtime_sec=38059.451 load_sec=0.296
+  k=5 q=0.0001 seed=2 samples=51973606 unique=6476 runtime_sec=38183.518 load_sec=0.294
+  k=5 q=0.0001 seed=3 samples=51970827 unique=6461 runtime_sec=38162.512 load_sec=0.287
+RAND-ESU aggregate: runs=3 total_samples=155925644 mean_runtime_sec=38135.160 mean_unique_classes=6468.000
+Parallel metrics: compute_time_sec=114405.481 wall_time_sec=38184.042 speedup=2.996 efficiency_percent=19.97

@@ -1,0 +1,3 @@
+dataset,directed,k,q,schedule,seed,samples_requested,total_samples,signature,count,concentration,algo
+Email-Enron,False,3,0.1,fine,1,5000,5000,001001110,4852,0.9704,ESA
+Email-Enron,False,3,0.1,fine,1,5000,5000,011101110,148,0.0296,ESA

@@ -1,0 +1,37 @@
+Dataset: Amazon0302
+Directed: True
+File: Amazon0302.txt
+Max nodes: All
+Allocated cores: 15/44
+-- ESA baseline runs --
+ESA baseline k=5 q=0.0001 seed=1
+  samples=5000 unique_classes=1462
+  runtime_sec=180.212
+  csv=Amazon0302/k5/baseline/esa/esa_q0.0001_seed1_samples5000.csv
+  meta=Amazon0302/k5/baseline/esa/esa_q0.0001_seed1_samples5000_meta.json
+  plot=Amazon0302/k5/baseline/esa/esa_q0.0001_seed1_samples5000_motifs.png
+ESA baseline k=5 q=0.0001 seed=2
+  samples=5000 unique_classes=1449
+  runtime_sec=257.803
+  csv=Amazon0302/k5/baseline/esa/esa_q0.0001_seed2_samples5000.csv
+  meta=Amazon0302/k5/baseline/esa/esa_q0.0001_seed2_samples5000_meta.json
+  plot=Amazon0302/k5/baseline/esa/esa_q0.0001_seed2_samples5000_motifs.png
+ESA baseline k=5 q=0.0001 seed=3
+  samples=5000 unique_classes=1471
+  runtime_sec=173.710
+  csv=Amazon0302/k5/baseline/esa/esa_q0.0001_seed3_samples5000.csv
+  meta=Amazon0302/k5/baseline/esa/esa_q0.0001_seed3_samples5000_meta.json
+  plot=Amazon0302/k5/baseline/esa/esa_q0.0001_seed3_samples5000_motifs.png
+-- End ESA baseline --
+
+=== Dataset completed: Amazon0302 ===
+Environment: Python 3.12.12 | Linux-6.6.105+-x86_64-with-glibc2.35
+k values: [5] | q values: [0.0001] | schedule: fine | child: bernoulli
+Total runs: 3 | Wall time: 1444.9s
+
+-- Aggregated summary for k=5 --
+seeds=[1, 2, 3] qs=[0.0001]
+plots: Amazon0302/k5/plots/top12_horizontal.png, top12_boxplot.png
+overlay: Amazon0302/k5/overlay/overlay_k5_q0.0001_seed1.png
+overlay: Amazon0302/k5/overlay/overlay_k5_q0.0001_seed2.png
+overlay: Amazon0302/k5/overlay/overlay_k5_q0.0001_seed3.png
