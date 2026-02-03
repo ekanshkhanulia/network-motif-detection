@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1f77b4" />
+    </marker>
+    <style>
+      .node { fill: #1f77b4; }
+      .edge { stroke: #1f77b4; stroke-width: 4; fill: none; }
+      .label { font-family: Arial, sans-serif; font-size: 18px; fill: #333333; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Triangle -->
+  <line class="edge" x1="400" y1="60" x2="340" y2="140" />
+  <line class="edge" x1="340" y1="140" x2="460" y2="140" />
+  <line class="edge" x1="460" y1="140" x2="400" y2="60" />
+  <circle class="node" cx="400" cy="60" r="10" />
+  <circle class="node" cx="340" cy="140" r="10" />
+  <circle class="node" cx="460" cy="140" r="10" />
+  <text class="label" x="400" y="175">Triangle</text>
+
+  <!-- Feedback loop -->
+  <line class="edge" x1="140" y1="210" x2="90" y2="290" marker-end="url(#arrow)" />
+  <line class="edge" x1="90" y1="290" x2="190" y2="290" marker-end="url(#arrow)" />
+  <line class="edge" x1="190" y1="290" x2="140" y2="210" marker-end="url(#arrow)" />
+  <circle class="node" cx="140" cy="210" r="10" />
+  <circle class="node" cx="90" cy="290" r="10" />
+  <circle class="node" cx="190" cy="290" r="10" />
+  <text class="label" x="140" y="330">Feedback loop</text>
+
+  <!-- Feed-forward loop -->
+  <line class="edge" x1="660" y1="210" x2="610" y2="290" marker-end="url(#arrow)" />
+  <line class="edge" x1="660" y1="210" x2="710" y2="290" marker-end="url(#arrow)" />
+  <line class="edge" x1="610" y1="290" x2="710" y2="290" marker-end="url(#arrow)" />
+  <circle class="node" cx="660" cy="210" r="10" />
+  <circle class="node" cx="610" cy="290" r="10" />
+  <circle class="node" cx="710" cy="290" r="10" />
+  <text class="label" x="660" y="330">Feed-forward loop</text>
+
+  <!-- Bi-fan -->
+  <line class="edge" x1="140" y1="380" x2="90" y2="460" marker-end="url(#arrow)" />
+  <line class="edge" x1="140" y1="380" x2="190" y2="460" marker-end="url(#arrow)" />
+  <line class="edge" x1="240" y1="380" x2="90" y2="460" marker-end="url(#arrow)" />
+  <line class="edge" x1="240" y1="380" x2="190" y2="460" marker-end="url(#arrow)" />
+  <circle class="node" cx="140" cy="380" r="10" />
+  <circle class="node" cx="240" cy="380" r="10" />
+  <circle class="node" cx="90" cy="460" r="10" />
+  <circle class="node" cx="190" cy="460" r="10" />
+  <text class="label" x="165" y="500">Bi-fan</text>
+
+  <!-- Biparallel -->
+  <line class="edge" x1="600" y1="380" x2="700" y2="380" marker-end="url(#arrow)" />
+  <line class="edge" x1="700" y1="380" x2="700" y2="460" marker-end="url(#arrow)" />
+  <line class="edge" x1="700" y1="460" x2="600" y2="460" marker-end="url(#arrow)" />
+  <line class="edge" x1="600" y1="460" x2="600" y2="380" marker-end="url(#arrow)" />
+  <circle class="node" cx="600" cy="380" r="10" />
+  <circle class="node" cx="700" cy="380" r="10" />
+  <circle class="node" cx="700" cy="460" r="10" />
+  <circle class="node" cx="600" cy="460" r="10" />
+  <text class="label" x="650" y="500">Biparallel</text>
+</svg>

@@ -1,3 +1,5 @@
+![Motif examples](motifs.svg)
+
 # RAND-ESU Motif Sampling
 
 This repository contains a Python implementation of RAND-ESU for sampling
