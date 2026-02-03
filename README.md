@@ -1,8 +1,10 @@
 # RAND-ESU Motif Sampling
 
-Python implementation of RAND-ESU for sampling connected induced subgraphs
-(motifs) on large networks, with parallel execution, ESA baselines, and
-significance testing utilities.
+This repository contains a Python implementation of RAND-ESU for sampling
+connected induced subgraphs (motifs) in large networks. It follows the
+depth-wise probabilistic pruning approach described by Wernicke (2005) and
+includes ESA baselines for comparison, parallel execution, and significance
+testing workflows.
 
 ## Overview
 - Unbiased motif sampling via depth-wise probabilities (RAND-ESU).
