@@ -1,4 +1,6 @@
-<img src="assets/Screenshot_555.png" alt="Motif examples" width="520">
+<p align="center">
+  <img src="assets/Screenshot_555.png" alt="Motif examples" width="420">
+</p>
 
 # RAND-ESU Motif Sampling
 
